@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		// Render text.
-		text.Draw(
+		text.draw(
 			"2Dumb",														//Font name (file name before '.bmp')
 			"This is a test example.\nIf you see this it is working.",		//String to be rendered
 			-0.85,-0.00001,													//(x,y) coords in window
