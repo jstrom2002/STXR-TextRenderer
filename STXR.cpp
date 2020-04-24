@@ -420,8 +420,7 @@ namespace STXR {
 			double area_h
 		) {
 			if (!fontExists(fontname)) {
-				fontname = "GUI/fonts/" + fontname + ".bmp";
-				load(fontname);
+	                    load(fontname);
 			}
 			draw(fontNameIndex(fontname), str, x, y, texcol, newlineSpace, 
 				spaceBetween, scale_x, scale_y, area_w, area_h);
@@ -438,7 +437,7 @@ namespace STXR {
 
 		bool Text::fontExists(std::string fontname) {
 			for (int i = 0; i < fonts.size(); ++i) {
-				if (fonts[i].name == fontname) {
+				if (fonts[i].name.find(fontname) != std::string::npos) {
 					return true;
 				}
 			}
