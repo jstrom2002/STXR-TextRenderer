@@ -419,9 +419,6 @@ namespace STXR {
 			double area_w,
 			double area_h
 		) {
-			if (!fontExists(fontname)) {
-	                    load(fontname);
-			}
 			draw(fontNameIndex(fontname), str, x, y, texcol, newlineSpace, 
 				spaceBetween, scale_x, scale_y, area_w, area_h);
 		}
