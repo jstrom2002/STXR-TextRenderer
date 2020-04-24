@@ -10,3 +10,5 @@ GLFW(required only to run the example code)
 ### Notes ###  
 Credit to Codehead's Bitmap Font Generator for generating character atlases for rendering: http://www.codehead.co.uk/cbfg/.
 It's recommended that you use his tool to create your atlases from TrueType font files.
+
+![Alt text](screenshot_0.jpg?raw=true "STXR Example")
