@@ -142,6 +142,8 @@ namespace STXR {
 			GLenum dataFormat = GL_RGBA;
 
 			glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+			//It may be necessary to restore default row length here to prevent crash on 'glTexImage2D()' call.
+			glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
 			glBindTexture(GL_TEXTURE_2D, tx.id);
 
 			glTexImage2D(GL_TEXTURE_2D, 0, internalFormat, width, height, 0, dataFormat, GL_UNSIGNED_BYTE, data);		
