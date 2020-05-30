@@ -44,13 +44,13 @@ int main(int argc, char** argv) {
 		// Render text.
 		text.draw(
 			"2Dumb",													//Font name (file name before '.bmp')
-			"This is a test example.\nIf you see this it is working.",	//String to be rendered
-			-0.85,-0.00001,												//(x,y) coords in window
-			glm::vec4(0.8, 0.8, 0.8, 1.0),								//text color
-			0.5,														//new line spacing
-			1.5,														//spacing between chars
-			20.0, 20.0,													//(x,y) scale values
-			0.75, 50.0													//(x,y) area for block of text
+			"This is a test example.\nIf you see this it is working.",//String to be rendered
+			-0.85,-0.00001,						  //(x,y) coords in window
+			glm::vec4(0.8, 0.8, 0.8, 1.0),				  //text color
+			0.5,							  //new line spacing
+			1.5,							  //spacing between chars
+			20.0, 20.0,						  //(x,y) scale values
+			0.75, 50.0						  //(x,y) area for block of text
 		);
 		/*NOTE: if the 'area width' parameter is exceeded by the characters drawn, a newline character
 		* will automatically be added to force the text to fit. For this reason, the drawn text reads 
@@ -60,7 +60,7 @@ int main(int argc, char** argv) {
 		* If you see this it
 		* is working.
 		*
-		* With three newline characters instead of as two newlines, like the string has.
+		* With two newline characters instead of one newlines, like the original string has.
 		*/
 
 		glfwSwapBuffers(window);
