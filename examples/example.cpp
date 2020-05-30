@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
 
 		// Render text.
 		text.draw(
-			"2Dumb",													//Font name (file name before '.bmp')
+			"2Dumb",						  //Font name (file name before '.bmp')
 			"This is a test example.\nIf you see this it is working.",//String to be rendered
 			-0.85,-0.00001,						  //(x,y) coords in window
 			glm::vec4(0.8, 0.8, 0.8, 1.0),				  //text color
